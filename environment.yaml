@@ -1,0 +1,21 @@
+name: larmap_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python>=3.7.6
+  # - bowtie2>=2.4.5
+  # - bedtools>=2.29.2
+  # - samtools
+  - numpy
+  - intervaltree
+  - pyfaidx
+# M1 mac non-pypi packages:
+# arch -arm64 brew install bowtie2
+# arch -arm64 brew install bedtools
+# arch -arm64 brew install samtools
+
+# pip install -r requirements.txt
+# conda env create -f environment.yaml
+
