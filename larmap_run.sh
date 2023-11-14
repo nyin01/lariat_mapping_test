@@ -210,7 +210,6 @@ if [ $exit_code -ne 0 ]; then
     exit $exit_code
 fi
 
-echo ""
 printf "$(date +'%m/%d/%y - %H:%M:%S') | Filtering results...\n"
 # combines the mapping results from each sample's read one and read two files and performs post-mapping filtering before outputting the final lariat mapping results
 python -u scripts/filter_lariats.py $fastq_dir $read_one_file $read_two_file \
@@ -224,5 +223,4 @@ if [ $exit_code -ne 0 ]; then
     exit $exit_code
 fi
 
-echo ""
 printf "$(date +'%m/%d/%y - %H:%M:%S') | Finished.\n"
